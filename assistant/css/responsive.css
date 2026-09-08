@@ -1,0 +1,221 @@
+/* ========================================
+   NASAQ - Global Responsive System
+   ======================================== */
+
+/* منع أي عنصر من إنه يسبب Horizontal Scroll */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   Global Box Sizing
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* الصور والفيديوهات */
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========================================
+   Main Wrapper
+   ======================================== */
+
+.wrap {
+  width: min(92%, 1400px);
+  margin-inline: auto;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+#siteHeader {
+  width: 100%;
+}
+
+#siteHeader .wrap {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* اللوجو */
+
+.logo {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Navigation */
+
+.main-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 2.5vw, 40px);
+}
+
+.main-links a {
+  white-space: nowrap;
+}
+
+/* اليمين */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+.btn {
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* ========================================
+   Tablet
+   ======================================== */
+
+@media (max-width: 900px) {
+
+  #siteHeader .wrap {
+    gap: 15px;
+  }
+
+  .main-links {
+    gap: 18px;
+  }
+
+  .nav-right {
+    gap: 8px;
+  }
+
+  .nav-right .icon-btn {
+    display: none;
+  }
+}
+
+/* ========================================
+   Mobile
+   ======================================== */
+
+@media (max-width: 700px) {
+
+  .wrap {
+    width: min(94%, 600px);
+  }
+
+  #siteHeader .wrap {
+    min-height: 70px;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: clamp(18px, 5vw, 24px);
+  }
+
+  .logo .en {
+    display: none;
+  }
+
+  .main-links {
+    gap: 12px;
+  }
+
+  .main-links a {
+    font-size: 13px;
+  }
+
+  .nav-right {
+    gap: 6px;
+  }
+
+  .nav-right .btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
+
+/* ========================================
+   Small Mobile
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  .wrap {
+    width: 92%;
+  }
+
+  #siteHeader .wrap {
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .main-links {
+    gap: 9px;
+  }
+
+  .main-links a {
+    font-size: 11px;
+  }
+
+  .nav-right .btn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
+
+/* ========================================
+   Very Small Screens
+   ======================================== */
+
+@media (max-width: 360px) {
+
+  .main-links {
+    gap: 7px;
+  }
+
+  .main-links a {
+    font-size: 10px;
+  }
+
+  .nav-right .btn {
+    padding: 7px 8px;
+    font-size: 10px;
+  }
+}
