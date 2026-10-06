@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأسعار والباقات — نَسَق | NASAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assistant/css/pricing.css">
+  </style>
+</head>
+
+<body>
+
+  <header id="siteHeader">
+    <div class="wrap">
+      <div class="logo">نَسَق <span class="en">NASAQ</span></div>
+      <nav class="main-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="works.html">الأعمال</a>
+        <a href="pricing.html" class="active">الأسعار</a>
+        <a href="about.html">من نحن</a>
+      </nav>
+      <div class="nav-right">
+        <button class="btn" onclick="document.getElementById('contactAnchor').scrollIntoView({behavior:'smooth'})">تواصل
+          معنا</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="glow"></div>
+    <div class="wrap">
+      <div class="eyebrow">الأسعار والباقات</div>
+      <h1>باقات جاهزة، أو اعمل باقتك بنفسك وشوف السعر فورًا.</h1>
+      <p>اختار من باقاتنا الأساسية، أو ابني باقة مخصصة على مزاجك من الأدوات تحت — والسعر بيتحسب لحظيًا وانت بتضيف.</p>
+    </div>
+  </section>
+
+  <section class="packages reveal">
+    <div class="wrap">
+      <div class="packages-grid">
+
+        <div class="pkg-card">
+          <div class="pkg-name">الباقة الأولى</div>
+          <ul class="pkg-items">
+            <li>10 تصميمات سوشيال ميديا</li>
+          </ul>
+          <div class="pkg-price">
+            <div class="old">2500 ج</div>
+            <div class="now"><span class="amount">2000</span><span class="currency">جنيه</span></div>
+            <span class="pkg-save">وفّر 500 جنيه</span>
+          </div>
+          <button class="btn" data-pkg-name="الباقة الأولى" data-pkg-price="2000 جنيه" data-pkg-old="2500 جنيه"
+            data-pkg-save="500 جنيه" data-pkg-items="10 تصميمات سوشيال ميديا">
+            اطلب الباقة دي
+          </button>
+        </div>
+
+        <div class="pkg-card featured">
+          <div class="pkg-badge">الأكثر طلبًا</div>
+          <div class="pkg-name">الباقة الثانية</div>
+          <ul class="pkg-items">
+            <li>10 تصميمات سوشيال ميديا</li>
+            <li>4 YouTube Thumbnails</li>
+          </ul>
+          <div class="pkg-price">
+            <div class="old">3700 ج</div>
+            <div class="now"><span class="amount">3000</span><span class="currency">جنيه</span></div>
+            <span class="pkg-save">وفّر 700 جنيه</span>
+          </div>
+          <button class="btn" data-pkg-name="الباقة الثانية (الأكثر طلبًا)" data-pkg-price="3000 جنيه"
+            data-pkg-old="3700 جنيه" data-pkg-save="700 جنيه"
+            data-pkg-items="10 تصميمات سوشيال ميديا + 4 YouTube Thumbnails">
+            اطلب الباقة دي
+          </button>
+        </div>
+
+        <div class="pkg-card">
+          <div class="pkg-name">الباقة الثالثة</div>
+          <ul class="pkg-items">
+            <li>15 تصميم سوشيال ميديا</li>
+            <li>6 YouTube Thumbnails</li>
+          </ul>
+          <div class="pkg-price">
+            <div class="old">5550 ج</div>
+            <div class="now"><span class="amount">5000</span><span class="currency">جنيه</span></div>
+            <span class="pkg-save">وفّر 550 جنيه</span>
+          </div>
+          <button class="btn" data-pkg-name="الباقة الثالثة" data-pkg-price="5000 جنيه" data-pkg-old="5550 جنيه"
+            data-pkg-save="550 جنيه" data-pkg-items="15 تصميم سوشيال ميديا + 6 YouTube Thumbnails">
+            اطلب الباقة دي
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="builder reveal">
+    <div class="wrap">
+      <div class="builder-head">
+        <div class="eyebrow">اعمل باقتك بنفسك</div>
+        <h2>مش لاقي اللي يناسبك في الباقات الجاهزة؟ اختار العدد اللي محتاجه وشوف السعر فورًا.</h2>
+        <p>الأسعار الفردية أساسها 250 جنيه للتصميم، 350 للثامبنيل، 800 للهوية البصرية — ولو إجمالي عدد القطع أكتر من 5،
+          بتاخد خصم 20% تلقائيًا على السعر الفردي.</p>
+      </div>
+
+      <div class="builder-panel">
+        <div class="builder-items">
+          <div class="item-row">
+            <div class="item-info">
+              <div class="item-name">تصميم سوشيال ميديا</div>
+              <div class="item-price">250 جنيه / تصميم</div>
+            </div>
+            <div class="qty-control">
+              <button class="qty-btn" data-action="dec" data-item="design">−</button>
+              <span class="qty-val" id="qty-design">0</span>
+              <button class="qty-btn" data-action="inc" data-item="design">+</button>
+            </div>
+          </div>
+          <div class="item-row">
+            <div class="item-info">
+              <div class="item-name">YouTube Thumbnail</div>
+              <div class="item-price">350 جنيه / ثامبنيل</div>
+            </div>
+            <div class="qty-control">
+              <button class="qty-btn" data-action="dec" data-item="thumb">−</button>
+              <span class="qty-val" id="qty-thumb">0</span>
+              <button class="qty-btn" data-action="inc" data-item="thumb">+</button>
+            </div>
+          </div>
+          <div class="item-row">
+            <div class="item-info">
+              <div class="item-name">هوية بصرية</div>
+              <div class="item-price">800 جنيه / هوية</div>
+            </div>
+            <div class="qty-control">
+              <button class="qty-btn" data-action="dec" data-item="identity">−</button>
+              <span class="qty-val" id="qty-identity">0</span>
+              <button class="qty-btn" data-action="inc" data-item="identity">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <h3>ملخص باقتك</h3>
+          <div class="summary-row"><span>عدد القطع الإجمالي</span><span id="sum-count">0</span></div>
+          <div class="summary-row"><span>السعر الفردي قبل الخصم</span><span id="sum-base">0 ج</span></div>
+          <div class="summary-row discount" id="sum-discount-row" style="display:none;">
+            <span>خصم 20% (أكتر من 5 قطع)</span><span id="sum-discount">-0 ج</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-total">
+            <span class="lbl">الإجمالي</span>
+            <span class="val"><span id="sum-total">0</span> ج</span>
+          </div>
+          <p class="summary-note">السعر هنا تقريبي لمساعدتك تحدد ميزانيتك — التأكيد النهائي للطلب والتفاصيل يتم بعد
+            التواصل معانا.</p>
+          <button class="btn" id="orderCustomBtn">اطلب باقتك</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="policies reveal">
+    <div class="wrap">
+      <div class="policies-head">
+        <div class="eyebrow">القوانين والسياسات</div>
+        <h2>كل حاجة تحتاج تعرفها قبل ما نبدأ شغل مع بعض.</h2>
+        <p>اضغط على أي بند عشان تفتحه وتشوف التفاصيل كاملة.</p>
+      </div>
+
+      <div class="accordion" id="policyAccordion">
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">💰</span> سياسة الدفع</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>يتم دفع قيمة الخدمة كاملة مقدمًا قبل بدء العمل.</li>
+              <li>يبدأ تنفيذ الطلب بعد تأكيد الدفع واستلام كل التفاصيل المطلوبة.</li>
+              <li>في حالة الباقات الشهرية، يتم تجديد الباقة قبل بداية الشهر الجديد.</li>
+              <li>الأسعار الموضحة تشمل الخدمات المحددة داخل الباقة فقط.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">🎨</span> سياسة التعديلات</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>يحق للعميل طلب تعديلين على التصميم الواحد.</li>
+              <li>التعديل المقصود هو تغيير النص، الصورة، الألوان أو ترتيب العناصر، وليس تغيير فكرة التصميم بالكامل.</li>
+              <li>في حالة طلب فكرة أو تصميم جديد بالكامل بعد اعتماد الفكرة الأولى، يُحسب كطلب جديد.</li>
+              <li>التعديلات الإضافية يمكن تنفيذها مقابل تكلفة إضافية يتم الاتفاق عليها مسبقًا.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">⏱️</span> سياسة التسليم</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>يتم تحديد موعد التسليم حسب نوع الخدمة وحجم الطلب.</li>
+              <li>التصميمات الفردية يتم تسليمها عادة خلال 1–2 يوم عمل من استلام الدفع وجميع تفاصيل الطلب.</li>
+              <li>التأخير الناتج عن عدم إرسال المحتوى أو الصور أو المعلومات المطلوبة من العميل لا يُحتسب ضمن مدة
+                التنفيذ.</li>
+              <li>الطلبات العاجلة تخضع لإمكانية التنفيذ وقد يكون لها تكلفة إضافية.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">📝</span> سياسة المحتوى</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>العميل مسؤول عن إرسال المعلومات والنصوص والصور المطلوبة للعمل.</li>
+              <li>العميل مسؤول عن صحة المعلومات العلمية والتعليمية الموجودة في المحتوى.</li>
+              <li>بعد اعتماد التصميم، أي تغيير جوهري في المحتوى قد يُعامل كتعديل إضافي.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">🚫</span> سياسة الإلغاء والاسترداد</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>لا يمكن استرداد قيمة الطلب بعد بدء التنفيذ الفعلي.</li>
+              <li>في حالة إلغاء الطلب قبل بدء العمل، يتم النظر في إمكانية استرداد المبلغ حسب حالة الطلب.</li>
+              <li>في حالة توقف العميل عن إرسال المعلومات المطلوبة لفترة طويلة، يحق لنَسَق تعليق المشروع لحين استكمال
+                البيانات.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">📦</span> سياسة نطاق الخدمة</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>كل باقة تشمل الخدمات الموضحة فيها فقط.</li>
+              <li>أي خدمة غير موجودة في الباقة يتم تسعيرها بشكل منفصل.</li>
+              <li>لا يتم إضافة خدمات مجانية خارج نطاق الاتفاق إلا بموافقة نَسَق.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">📱</span> إدارة السوشيال ميديا</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <p class="note">في حالة التعاقد على إدارة صفحات السوشيال ميديا:</p>
+            <ul>
+              <li>يتم الاتفاق مسبقًا على عدد التصميمات والمنشورات والخدمات المشمولة.</li>
+              <li>أي خدمات إضافية خارج الاتفاق يتم تسعيرها منفصلًا.</li>
+              <li>العميل مسؤول عن توفير بيانات الدخول والصلاحيات المطلوبة إذا كانت الخدمة تحتاج ذلك.</li>
+              <li>لا تضمن نَسَق عددًا معينًا من المتابعين أو المشاهدات أو المبيعات؛ لأن النتائج تعتمد على عوامل متعددة
+                خارج نطاق التصميم وحده.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">🖼️</span> حقوق استخدام الأعمال</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>بعد سداد قيمة المشروع بالكامل، يحصل العميل على حق استخدام التصميمات المتفق عليها في أغراضه التجارية.
+              </li>
+              <li>تحتفظ نَسَق بحق عرض الأعمال في Portfolio / Behance / Social Media لأغراض التسويق لأعمالها، ما لم يتم
+                الاتفاق مسبقًا على سرية العمل.</li>
+              <li>الملفات الأصلية القابلة للتعديل مثل PSD لا تكون ضمن التسليم إلا إذا تم الاتفاق عليها مسبقًا.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">🔐</span> الخصوصية والسرية</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>تحافظ نَسَق على سرية المعلومات والمواد الخاصة بالعميل.</li>
+              <li>لا يتم مشاركة بيانات الدخول أو الملفات الخاصة بالعميل مع أي طرف غير مصرح له.</li>
+              <li>أي مواد يطلب العميل عدم نشرها في Portfolio يتم احترام طلبه وفق الاتفاق.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">💬</span> التواصل</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <ul>
+              <li>يتم اعتماد قناة تواصل أساسية متفق عليها مع العميل.</li>
+              <li>يتم إرسال الملاحظات والتعديلات بشكل واضح ومنظم قدر الإمكان.</li>
+              <li>تغيير المطلوب عدة مرات أو إرسال ملاحظات متفرقة قد يؤثر على موعد التسليم.</li>
+              <li>الاعتماد النهائي يكون من الشخص المسؤول عن المشروع من جهة العميل.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <div class="acc-head">
+            <div class="acc-title"><span class="acc-emoji">🤝</span> بداية التعاون</div>
+            <div class="acc-icon">+</div>
+          </div>
+          <div class="acc-body">
+            <p class="note">قبل بدء أي مشروع يتم تحديد:</p>
+            <ul>
+              <li>الخدمة ← المطلوب ← عدد التصميمات ← مدة التنفيذ ← السعر ← طريقة الدفع ← التعديلات ← موعد التسليم.</li>
+              <li>ولا يبدأ التنفيذ إلا بعد موافقة العميل على التفاصيل والدفع.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="policies-footer-note">
+        <strong>نَسَق</strong> لا تبيع مجرد تصميمات؛ نَسَق تعمل على بناء حضور بصري وتسويقي أفضل للعميل، مع الالتزام بما
+        تم الاتفاق عليه دون وعود بنتائج مضمونة.
+        <br><br>
+        بمجرد تأكيد الطلب، يُعتبر العميل موافقًا على سياسات وشروط نَسَق الموضحة أعلاه.
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-close" id="contactAnchor">
+    <div class="cta-glow"></div>
+    <div class="wrap">
+      <h2><span class="l1">خلّيها</span><span class="l2">نَسَق.</span></h2>
+      <button class="btn">ابدأ مشروعك</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">نَسَق <span class="en">NASAQ</span></div>
+          <p>وكالة علامات وإبداع بتبني براندات مرتبة وواضحة للسوق المصري والعربي.</p>
+        </div>
+        <div class="footer-col">
+          <h4>روابط</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="works.html">الأعمال</a></li>
+            <li><a href="pricing.html">الأسعار</a></li>
+            <li><a href="about.html">من نحن</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>صفحات</h4>
+          <ul>
+            <li><a href="#">سياسة الخصوصية</a></li>
+            <li><a href="#">الشروط والأحكام</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>تواصل</h4>
+          <ul>
+            <li><a href="mailto:nasaqagency5@gmail.com">nasaqagency5@gmail.com</a></li>
+            <li><a href="#">انستجرام</a></li>
+            <li><a href="#">فيسبوك</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 نَسَق. جميع الحقوق محفوظة.</span>
+        <span>صُنع بعناية في القاهرة</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assistant/js/pricing.js"></script>
+  <script src="assistant/js/main.js"></script>
+
+</body>
+
+</html>
