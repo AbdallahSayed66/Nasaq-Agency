@@ -487,5 +487,7 @@ document.querySelectorAll('.acc-item').forEach(item => {
 });
 // Deep links open the existing policy, without inventing a new legal page.
 if(location.hash === '#privacy'){const p=document.getElementById('privacy'); p?.querySelector('.acc-head')?.click();}
-</script></body>
+</script><script>function showLinkedPolicy(){if(location.hash==='#privacy'){const p=document.getElementById('privacy');if(p&&!p.classList.contains('open'))p.querySelector('.acc-head').click();}}
+window.addEventListener('hashchange',showLinkedPolicy);showLinkedPolicy();
+document.querySelectorAll('.acc-head').forEach(h=>{h.setAttribute('role','button');h.tabIndex=0;h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();h.click();}});});</script></body>
 </html>
